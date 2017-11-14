@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2776607ec5634fbb85f009f59b38391a" Name="Diagram1">
+        <EntityTypeShape EntityType="ChatterModel.Chat" Width="1.5" PointX="5.625" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.Follow" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.Like" Width="1.5" PointX="6.875" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.Message" Width="1.5" PointX="10.875" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.sysdiagram" Width="1.5" PointX="7.875" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.User" Width="1.5" PointX="2.75" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="ChatterModel.FK_Chat_Message" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Chat_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Follows_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Follows_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Likes_Message" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Likes_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Message_Likes" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_User_Likes" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Message_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_User_Message" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
