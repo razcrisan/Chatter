@@ -1,0 +1,42 @@
+﻿@model Chatter.Models.Like
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Like</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Like1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Like1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message.MessageText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message.MessageText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Photo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LikesID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
